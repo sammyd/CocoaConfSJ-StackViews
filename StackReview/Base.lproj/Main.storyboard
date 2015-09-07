@@ -48,26 +48,26 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gjt-6u-blW">
                                                 <rect key="frame" x="8" y="8" width="584" height="252"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PancakeHouseName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fS4-Oc-MBx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="584" height="48"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PancakeHouseName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fS4-Oc-MBx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="584" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rg6-ZP-iH9" userLabel="Yellow Bar">
-                                                        <rect key="frame" x="0.0" y="48" width="584" height="182.5"/>
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rg6-ZP-iH9" userLabel="Yellow Bar">
+                                                        <rect key="frame" x="0.0" y="0.0" width="584" height="124"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vjO-qL-KiN">
-                                                                <rect key="frame" x="8" y="8" width="568" height="166.5"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vjO-qL-KiN">
+                                                                <rect key="frame" x="8" y="8" width="568" height="108"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3G-5j-WA1">
-                                                                        <rect key="frame" x="0.0" y="50.5" width="284" height="66"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3G-5j-WA1">
+                                                                        <rect key="frame" x="0.0" y="21" width="284" height="66"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="55"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="pancake_rate_5" translatesAutoresizingMaskIntoConstraints="NO" id="7vk-Hr-0PS">
-                                                                        <rect key="frame" x="284" y="33.5" width="284" height="100"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" misplaced="YES" image="pancake_rate_5" translatesAutoresizingMaskIntoConstraints="NO" id="7vk-Hr-0PS">
+                                                                        <rect key="frame" x="284" y="4" width="284" height="100"/>
                                                                     </imageView>
                                                                 </subviews>
                                                             </stackView>
@@ -80,12 +80,15 @@
                                                             <constraint firstItem="vjO-qL-KiN" firstAttribute="leading" secondItem="rg6-ZP-iH9" secondAttribute="leadingMargin" id="z4R-fJ-e0o"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Details" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEX-vS-Pwd" customClass="MultilineLabelThatWorks" customModule="StackReview" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="230.5" width="584" height="21.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" misplaced="YES" text="Details" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEX-vS-Pwd" customClass="MultilineLabelThatWorks" customModule="StackReview" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="124" width="584" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" horizontalCompressionResistancePriority="250" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="60I-ZE-EOw">
+                                                        <rect key="frame" x="0.0" y="124" width="584" height="128"/>
+                                                    </mapView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -97,7 +100,20 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="60I-ZE-EOw" firstAttribute="height" secondItem="DhE-aG-cLN" secondAttribute="height" id="fmE-Bp-SD1"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fmE-Bp-SD1"/>
+                                    </mask>
+                                </variation>
                                 <variation key="heightClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=regular" distribution="fill">
+                                    <mask key="constraints">
+                                        <include reference="fmE-Bp-SD1"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -113,6 +129,7 @@
                     <connections>
                         <outlet property="detailsLabel" destination="SEX-vS-Pwd" id="0mL-kX-w8P"/>
                         <outlet property="imageView" destination="DhE-aG-cLN" id="QDP-GZ-08L"/>
+                        <outlet property="mapView" destination="60I-ZE-EOw" id="Puc-y9-XHV"/>
                         <outlet property="nameLabel" destination="fS4-Oc-MBx" id="fhl-vL-vYY"/>
                         <outlet property="priceGuideLabel" destination="g3G-5j-WA1" id="Kil-vY-kL1"/>
                         <outlet property="ratingImage" destination="7vk-Hr-0PS" id="KAk-T9-0BH"/>
