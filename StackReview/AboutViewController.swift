@@ -73,14 +73,35 @@ extension AboutViewController {
 extension AboutViewController {
   @IBAction func handleCopyrightButtonTapped(sender: AnyObject) {
     if copyrightStackView != .None {
-      // TODO
+      UIView.animateWithDuration(0.8, animations: {
+        self.copyrightStackView?.hidden = true
+        }, completion: { _ in
+          self.copyrightStackView?.removeFromSuperview()
+          self.copyrightStackView = nil
+      })
     } else {
-      // TODO
+      copyrightStackView = createCopyrightStackView()
+      copyrightStackView?.hidden = true
+      contentStackView.addArrangedSubview(copyrightStackView!)
+      UIView.animateWithDuration(0.8) {
+        self.copyrightStackView?.hidden = false
+      }
     }
   }
   
   private func createCopyrightStackView() -> UIStackView? {
-    return .None
+    let imageView = UIImageView(image: UIImage(named: "rw_logo"))
+    imageView.contentMode = .ScaleAspectFit
+    
+    let label = UILabel()
+    label.text = "© Razeware 2015"
+    
+    let stackView = UIStackView(arrangedSubviews: [imageView, label])
+    stackView.axis = .Horizontal
+    stackView.alignment = .Center
+    stackView.distribution = .FillEqually
+    
+    return stackView
   }
 
 }
