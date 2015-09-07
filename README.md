@@ -1,7 +1,6 @@
-# 360|iDev 2015 :: Universal Layout Workshop
+# iOSDevUK 2015 :: I  Stack Views and you should too
 
-This repo accompanies the workshop presented at 260|iDev 2015 on
-Universal Layout on iOS.
+This repo accompanies the talk presented at iOSDevUK about stack views
 
 For info, gimme a shout - [@iwantmyrealname](https://twitter.com/iwantmyrealname)
 
