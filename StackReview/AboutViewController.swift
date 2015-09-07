@@ -24,6 +24,10 @@ import UIKit
 
 class AboutViewController: UIViewController {
   
+  
+  @IBOutlet weak var contentStackView: UIStackView!
+  private var copyrightStackView: UIStackView?
+  
   @IBOutlet weak var backgroundImageView: UIImageView!
   
   override func viewDidLoad() {
@@ -63,3 +67,22 @@ extension AboutViewController {
     return UIImage(named: aspectRatio > 1 ? "pancake3" : "placeholder")
   }
 }
+
+
+
+extension AboutViewController {
+  @IBAction func handleCopyrightButtonTapped(sender: AnyObject) {
+    if copyrightStackView != .None {
+      // TODO
+    } else {
+      // TODO
+    }
+  }
+  
+  private func createCopyrightStackView() -> UIStackView? {
+    return .None
+  }
+
+}
+
+

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -219,9 +219,54 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="sis-w5-RaP">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oQ-db-FEt">
+                                <rect key="frame" x="20" y="40" width="560" height="269"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1by-gg-khH">
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="269"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="74b-9K-zRm" userLabel="Content Container">
+                                            <rect key="frame" x="155" y="8" width="250" height="253"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bLJ-wm-tQ7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="253"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StackReview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoV-aO-n8o">
+                                                            <rect key="frame" x="32.5" y="0.0" width="185.5" height="42"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="35"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pancake_logo" translatesAutoresizingMaskIntoConstraints="NO" id="0U8-cf-cnn">
+                                                            <rect key="frame" x="0.0" y="42" width="250" height="181"/>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsb-nL-t8N">
+                                                            <rect key="frame" x="52" y="223" width="146" height="30"/>
+                                                            <state key="normal" title="Show/Hide Copyright"/>
+                                                            <connections>
+                                                                <action selector="handleCopyrightButtonTapped:" destination="M4M-oT-X8b" eventType="touchUpInside" id="n6D-lB-Rmb"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <variation key="heightClass=compact" axis="horizontal"/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="74b-9K-zRm" firstAttribute="bottom" secondItem="1by-gg-khH" secondAttribute="bottomMargin" id="L3W-PJ-5KM"/>
+                                        <constraint firstItem="74b-9K-zRm" firstAttribute="centerX" secondItem="1by-gg-khH" secondAttribute="centerX" id="MAP-Ef-3aP"/>
+                                        <constraint firstItem="74b-9K-zRm" firstAttribute="top" secondItem="1by-gg-khH" secondAttribute="topMargin" id="Pmb-Fa-5Cp"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9oQ-db-FEt" secondAttribute="trailing" id="IhW-9W-uWL"/>
+                            <constraint firstItem="9oQ-db-FEt" firstAttribute="top" secondItem="8ay-dw-mIO" secondAttribute="bottom" constant="20" id="KZ5-rL-HTz"/>
+                            <constraint firstItem="9oQ-db-FEt" firstAttribute="leading" secondItem="eWp-El-gqf" secondAttribute="leadingMargin" id="OwY-Bh-DlO"/>
                             <constraint firstItem="sis-w5-RaP" firstAttribute="top" secondItem="eWp-El-gqf" secondAttribute="top" id="RRi-yW-lbN"/>
                             <constraint firstItem="W0t-mM-Gfl" firstAttribute="top" secondItem="sis-w5-RaP" secondAttribute="bottom" id="TIP-Ee-FLY"/>
                             <constraint firstAttribute="trailing" secondItem="sis-w5-RaP" secondAttribute="trailing" id="eQ1-VP-6qX"/>
@@ -230,6 +275,7 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="sis-w5-RaP" id="cEu-Dm-sUe"/>
+                        <outlet property="contentStackView" destination="74b-9K-zRm" id="3RD-2R-xzv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="53q-4S-cfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -258,6 +304,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pancake_logo" width="250" height="181"/>
         <image name="pancake_rate_5" width="100" height="100"/>
         <image name="placeholder" width="1024" height="683"/>
     </resources>
