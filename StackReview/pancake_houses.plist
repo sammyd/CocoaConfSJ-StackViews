@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>city</key>
+		<string>Tulsa</string>
+		<key>name</key>
+		<string>Crêpe Delight</string>
+		<key>details</key>
+		<string>In addition to covering all the traditional pancake bases, Crêpe Delight has also started to expand out into regional specialities - including British Roast Dinner in a pancake, Hotdog in a pancake and Pizza in a pancake.</string>
+		<key>priceGuide</key>
+		<integer>2</integer>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>imageName</key>
+		<string>pancake1</string>
+		<key>thumbnailName</key>
+		<string>pancake1_thumb</string>
+		<key>longitude</key>
+		<real>-95.99277499999999</real>
+		<key>latitude</key>
+		<real>36.153982</real>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>Colorado Springs</string>
+		<key>thumbnailName</key>
+		<string>pancake2_thumb</string>
+		<key>name</key>
+		<string>Stack &apos;em High</string>
+		<key>details</key>
+		<string>As the name suggests, quantity is king here. Their famous &quot;endless pancake stack&quot; is served daily until 11am. If you eat 100 pancakes you win a bucket!</string>
+		<key>priceGuide</key>
+		<integer>1</integer>
+		<key>rating</key>
+		<integer>3</integer>
+		<key>imageName</key>
+		<string>pancake2</string>
+		<key>longitude</key>
+		<real>-104.821363</real>
+		<key>latitude</key>
+		<real>38.833882</real>
+	</dict>
+	<dict>
+		<key>thumbnailName</key>
+		<string>pancake3_thumb</string>
+		<key>city</key>
+		<string>Baltimore</string>
+		<key>name</key>
+		<string>Batter &apos;n Griddle</string>
+		<key>details</key>
+		<string>Fancy creating your own pancakes? Then this is your place. Each table has a griddle, and you&apos;re provided with a vat of pancake batter. Fun (and 2nd degree burns) for all the family.</string>
+		<key>priceGuide</key>
+		<integer>3</integer>
+		<key>rating</key>
+		<integer>5</integer>
+		<key>imageName</key>
+		<string>pancake3</string>
+		<key>longitude</key>
+		<real>-76.612189</real>
+		<key>latitude</key>
+		<real>39.290385</real>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>San Diego</string>
+		<key>thumbnailName</key>
+		<string>pancake4_thumb</string>
+		<key>name</key>
+		<string>The Happy Pancake</string>
+		<key>details</key>
+		<string>The world&apos;s first 24hr pancake house. Forms an excellent end to a night out - a stack of pancakes before bed is scientifically proven to prevent a hangover.</string>
+		<key>priceGuide</key>
+		<integer>1</integer>
+		<key>rating</key>
+		<integer>4</integer>
+		<key>imageName</key>
+		<string>pancake4</string>
+		<key>longitude</key>
+		<real>-117.161084</real>
+		<key>latitude</key>
+		<real>32.715738</real>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>Paris</string>
+		<key>thumbnailName</key>
+		<string>pancake5_thumb</string>
+		<key>name</key>
+		<string>Maison des Crêpes</string>
+		<key>details</key>
+		<string>If you&apos;re expecting an actual house built with pancakes, you can&apos;t go wrong with Maison des Crêpes. The decor, although tacky, makes you feel as if you&apos;ve entered the pancake equivalent of Willi Wonker&apos;s factory.</string>
+		<key>priceGuide</key>
+		<integer>2</integer>
+		<key>rating</key>
+		<integer>2</integer>
+		<key>imageName</key>
+		<string>pancake5</string>
+		<key>longitude</key>
+		<real>2.352222</real>
+		<key>latitude</key>
+		<real>48.856614</real>
+	</dict>
+	<dict>
+		<key>city</key>
+		<string>London</string>
+		<key>thumbnailName</key>
+		<string>pancake6_thumb</string>
+		<key>name</key>
+		<string>Ye Olde Pancake</string>
+		<key>details</key>
+		<string>Most people think that pancakes were invented in 1979 due to an over-abundance of eggs in supermarkets. In actual fact they herald from the mid-8th Century. Come try some authentic original pancakes!</string>
+		<key>priceGuide</key>
+		<integer>3</integer>
+		<key>rating</key>
+		<integer>1</integer>
+		<key>imageName</key>
+		<string>pancake6</string>
+		<key>longitude</key>
+		<real>-0.127758</real>
+		<key>latitude</key>
+		<real>51.507351</real>
+	</dict>
+</array>
+</plist>
