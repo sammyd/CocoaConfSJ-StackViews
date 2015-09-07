@@ -164,24 +164,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="WJ1-Tp-ogu" style="IBUITableViewCellStyleDefault" id="WCw-Qf-5nD">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="WCw-Qf-5nD" customClass="PancakeHouseTableViewCell" customModule="StackReview" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="600" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
                                     <rect key="frame" x="0.0" y="0.0" width="567" height="118.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WJ1-Tp-ogu">
-                                            <rect key="frame" x="15" y="0.0" width="550" height="118.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2Yj-Yk-fv6">
+                                            <rect key="frame" x="8" y="8" width="551" height="103"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_thumb" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-vK-m5l">
+                                                    <rect key="frame" x="0.0" y="2" width="100" height="100"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" misplaced="YES" text="PancakeHouseName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vz3-5m-uQ2">
+                                                    <rect key="frame" x="105" y="37" width="391" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pancake_rate_5_small" translatesAutoresizingMaskIntoConstraints="NO" id="mb3-ga-smN">
+                                                    <rect key="frame" x="501" y="27" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2Yj-Yk-fv6" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="topMargin" id="X0O-hN-Jkw"/>
+                                        <constraint firstItem="2Yj-Yk-fv6" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leadingMargin" id="ceM-X9-oPV"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="2Yj-Yk-fv6" secondAttribute="bottom" id="oy3-ec-pK6"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="2Yj-Yk-fv6" secondAttribute="trailing" id="yDV-Gz-QXy"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
+                                    <outlet property="nameLabel" destination="vz3-5m-uQ2" id="VAB-3w-D4j"/>
+                                    <outlet property="pancakeImage" destination="fkb-vK-m5l" id="WNi-cr-csO"/>
+                                    <outlet property="ratingImage" destination="mb3-ga-smN" id="SZ3-b3-lNv"/>
                                     <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="6S0-TO-JiA"/>
                                 </connections>
                             </tableViewCell>
@@ -306,7 +325,9 @@
     <resources>
         <image name="pancake_logo" width="250" height="181"/>
         <image name="pancake_rate_5" width="100" height="100"/>
+        <image name="pancake_rate_5_small" width="50" height="50"/>
         <image name="placeholder" width="1024" height="683"/>
+        <image name="placeholder_thumb" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
