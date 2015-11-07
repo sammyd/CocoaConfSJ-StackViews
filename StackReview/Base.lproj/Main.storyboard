@@ -61,21 +61,14 @@
                                                                 <rect key="frame" x="8" y="8" width="568" height="108"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3G-5j-WA1">
-                                                                        <rect key="frame" x="0.0" y="21" width="190" height="66"/>
+                                                                        <rect key="frame" x="0.0" y="21" width="284" height="66"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="55"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" misplaced="YES" image="pancake_rate_5" translatesAutoresizingMaskIntoConstraints="NO" id="7vk-Hr-0PS">
-                                                                        <rect key="frame" x="190" y="4" width="189" height="100"/>
+                                                                        <rect key="frame" x="284" y="4" width="284" height="100"/>
                                                                     </imageView>
-                                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgp-Z1-S2d">
-                                                                        <rect key="frame" x="379" y="39" width="190" height="30"/>
-                                                                        <state key="normal" title="Hide Details"/>
-                                                                        <connections>
-                                                                            <action selector="handleShowHideDetailsButtonPressed:" destination="JEX-9P-axG" eventType="touchUpInside" id="ejf-xr-P6l"/>
-                                                                        </connections>
-                                                                    </button>
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
@@ -140,7 +133,6 @@
                         <outlet property="nameLabel" destination="fS4-Oc-MBx" id="fhl-vL-vYY"/>
                         <outlet property="priceGuideLabel" destination="g3G-5j-WA1" id="Kil-vY-kL1"/>
                         <outlet property="ratingImage" destination="7vk-Hr-0PS" id="KAk-T9-0BH"/>
-                        <outlet property="showDetailsButton" destination="fgp-Z1-S2d" id="fCI-Nr-AdC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
@@ -183,7 +175,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_thumb" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-vK-m5l">
                                                     <rect key="frame" x="0.0" y="2" width="100" height="100"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="PancakeHouseName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vz3-5m-uQ2">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" misplaced="YES" text="PancakeHouseName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vz3-5m-uQ2">
                                                     <rect key="frame" x="105" y="37" width="391" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

@@ -80,19 +80,3 @@ extension PancakeHouseViewController {
     map.addAnnotation(annotation)
   }
 }
-
-
-extension PancakeHouseViewController {
-
-  @IBAction func handleShowHideDetailsButtonPressed(sender: AnyObject) {
-    let buttonTitle = detailsLabel.hidden ? "Hide Details" : "Show Details"
-    showDetailsButton.setTitle(buttonTitle, forState: .Normal)
-    animateView(detailsLabel, toVisible: detailsLabel.hidden)
-  }
-  
-  private func animateView(view: UIView, toVisible visible: Bool) {
-    UIView.animateWithDuration(0.8, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 10, options: UIViewAnimationOptions(), animations: {
-      view.hidden = !visible
-      }, completion: nil)
-  }
-}
