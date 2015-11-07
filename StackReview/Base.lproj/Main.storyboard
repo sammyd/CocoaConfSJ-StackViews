@@ -67,7 +67,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3G-5j-WA1">
-                                                                <rect key="frame" x="0.0" y="17" width="300" height="66"/>
+                                                                <rect key="frame" x="0.0" y="17" width="200" height="66"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="55"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -77,12 +77,20 @@
                                                                 </variation>
                                                             </label>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="pancake_rate_5" translatesAutoresizingMaskIntoConstraints="NO" id="7vk-Hr-0PS">
-                                                                <rect key="frame" x="300" y="0.0" width="300" height="100"/>
+                                                                <rect key="frame" x="200" y="0.0" width="200" height="100"/>
                                                                 <animations/>
                                                                 <variation key="heightClass=regular" misplaced="YES">
                                                                     <rect key="frame" x="300" y="0.0" width="300" height="100"/>
                                                                 </variation>
                                                             </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEd-ME-BQw">
+                                                                <rect key="frame" x="400" y="35" width="200" height="30"/>
+                                                                <animations/>
+                                                                <state key="normal" title="Hide Details"/>
+                                                                <connections>
+                                                                    <action selector="showHideDetailsButtonPressed:" destination="JEX-9P-axG" eventType="touchUpInside" id="zU8-WF-5Uz"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                         <animations/>
                                                         <variation key="heightClass=regular" misplaced="YES">
@@ -103,7 +111,7 @@
                                                 </variation>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Details" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEX-vS-Pwd" customClass="MultilineLabelThatWorks" customModule="StackReview" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="148" width="600" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="148" width="600" height="22"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -113,7 +121,7 @@
                                                 </variation>
                                             </label>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="248" verticalCompressionResistancePriority="748" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IBL-AY-5PD">
-                                                <rect key="frame" x="0.0" y="169.5" width="600" height="98.5"/>
+                                                <rect key="frame" x="0.0" y="170" width="600" height="99"/>
                                                 <animations/>
                                                 <variation key="heightClass=regular" misplaced="YES">
                                                     <rect key="frame" x="0.0" y="170" width="600" height="283"/>
@@ -161,6 +169,7 @@
                         <outlet property="nameLabel" destination="fS4-Oc-MBx" id="fhl-vL-vYY"/>
                         <outlet property="priceGuideLabel" destination="g3G-5j-WA1" id="Kil-vY-kL1"/>
                         <outlet property="ratingImage" destination="7vk-Hr-0PS" id="KAk-T9-0BH"/>
+                        <outlet property="showDetailsButton" destination="EEd-ME-BQw" id="hZh-YA-oEL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
