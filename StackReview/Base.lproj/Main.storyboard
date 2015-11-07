@@ -43,6 +43,9 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="DhE-aG-cLN">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="268"/>
                                         <animations/>
+                                        <variation key="heightClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="284"/>
+                                        </variation>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0E9-4k-dTn">
                                         <rect key="frame" x="0.0" y="268" width="600" height="268"/>
@@ -53,26 +56,38 @@
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="48"/>
+                                                </variation>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rg6-ZP-iH9" userLabel="Yellow Bar">
-                                                <rect key="frame" x="0.0" y="48" width="600" height="198.5"/>
+                                                <rect key="frame" x="0.0" y="48" width="600" height="100"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1hz-CO-OX3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="198.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3G-5j-WA1">
-                                                                <rect key="frame" x="0.0" y="66.5" width="300" height="66"/>
+                                                                <rect key="frame" x="0.0" y="17" width="300" height="66"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="55"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="17" width="300" height="66"/>
+                                                                </variation>
                                                             </label>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="pancake_rate_5" translatesAutoresizingMaskIntoConstraints="NO" id="7vk-Hr-0PS">
-                                                                <rect key="frame" x="300" y="49.5" width="300" height="100"/>
+                                                                <rect key="frame" x="300" y="0.0" width="300" height="100"/>
                                                                 <animations/>
+                                                                <variation key="heightClass=regular" misplaced="YES">
+                                                                    <rect key="frame" x="300" y="0.0" width="300" height="100"/>
+                                                                </variation>
                                                             </imageView>
                                                         </subviews>
                                                         <animations/>
+                                                        <variation key="heightClass=regular" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                                        </variation>
                                                     </stackView>
                                                 </subviews>
                                                 <animations/>
@@ -83,20 +98,49 @@
                                                     <constraint firstItem="1hz-CO-OX3" firstAttribute="bottom" secondItem="rg6-ZP-iH9" secondAttribute="bottom" id="f4H-Vc-GfR"/>
                                                     <constraint firstAttribute="trailing" secondItem="1hz-CO-OX3" secondAttribute="trailing" id="gdv-0i-sXy"/>
                                                 </constraints>
+                                                <variation key="heightClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="48" width="600" height="100"/>
+                                                </variation>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Details" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEX-vS-Pwd" customClass="MultilineLabelThatWorks" customModule="StackReview" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="246.5" width="600" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="148" width="600" height="21.5"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="148" width="600" height="22"/>
+                                                </variation>
                                             </label>
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="248" verticalCompressionResistancePriority="748" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IBL-AY-5PD">
+                                                <rect key="frame" x="0.0" y="169.5" width="600" height="98.5"/>
+                                                <animations/>
+                                                <variation key="heightClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="170" width="600" height="283"/>
+                                                </variation>
+                                            </mapView>
                                         </subviews>
                                         <animations/>
+                                        <variation key="heightClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="284" width="600" height="453"/>
+                                        </variation>
                                     </stackView>
                                 </subviews>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstItem="IBL-AY-5PD" firstAttribute="height" secondItem="DhE-aG-cLN" secondAttribute="height" id="gIR-B6-rEp"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gIR-B6-rEp"/>
+                                    </mask>
+                                </variation>
                                 <variation key="heightClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=regular" distribution="fill">
+                                    <mask key="constraints">
+                                        <include reference="gIR-B6-rEp"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <animations/>
@@ -113,6 +157,7 @@
                     <connections>
                         <outlet property="detailsLabel" destination="SEX-vS-Pwd" id="0mL-kX-w8P"/>
                         <outlet property="imageView" destination="DhE-aG-cLN" id="QDP-GZ-08L"/>
+                        <outlet property="mapView" destination="IBL-AY-5PD" id="VNN-Lz-hh8"/>
                         <outlet property="nameLabel" destination="fS4-Oc-MBx" id="fhl-vL-vYY"/>
                         <outlet property="priceGuideLabel" destination="g3G-5j-WA1" id="Kil-vY-kL1"/>
                         <outlet property="ratingImage" destination="7vk-Hr-0PS" id="KAk-T9-0BH"/>
